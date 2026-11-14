@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — PS5 GTA 6 Storage Calculator | mohit-tools.com</title>
+  <meta name="description" content="Terms of Service and disclaimers for the PS5 GTA 6 Storage Calculator on mohit-tools.com." />
+
+  <!-- Sync Light/Dark Theme with Main Calculator -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('ps5_gta6_theme');
+        if (savedTheme === 'light') {
+          document.documentElement.classList.remove('dark');
+        } else {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --bg-canvas: #F4F6F9;
+    }
+    html.dark {
+      --bg-canvas: #0B0E14;
+    }
+    body {
+      background-color: var(--bg-canvas);
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-900 dark:text-slate-100 antialiased transition-colors duration-200 flex flex-col">
+
+  <!-- Top Bar with Back Link & Theme Toggle -->
+  <header class="w-full">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a
+        href="index.html"
+        class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-[#0070D1] dark:text-slate-300 dark:hover:text-[#00E5FF] transition-colors"
+      >
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        Back to Calculator
+      </a>
+
+      <button
+        id="themeToggleBtn"
+        type="button"
+        aria-label="Toggle Light or Dark Mode"
+        title="Toggle Light / Dark Mode"
+        class="inline-flex items-center justify-center w-11 h-11 rounded-xl border border-slate-200 bg-white text-slate-700 hover:bg-slate-100 dark:border-slate-800 dark:bg-[#121722] dark:text-slate-200 dark:hover:bg-slate-800/80 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0070D1] dark:focus-visible:ring-[#00E5FF]"
+      >
+        <svg class="w-5 h-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364l-1.414 1.414M7.05 16.95l-1.414 1.414m12.728 0l-1.414-1.414M7.05 7.05L5.636 5.636M12 8a4 4 0 100 8 4 4 0 000-8z" />
+        </svg>
+        <svg class="w-5 h-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Terms Content -->
+  <main class="flex-1 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-14">
+    <article class="rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-white dark:bg-[#121722] p-6 sm:p-10 shadow-sm space-y-6">
+      <div class="pb-5 border-b border-slate-200 dark:border-slate-800">
+        <p class="text-xs font-semibold tracking-wider uppercase text-[#0070D1] dark:text-[#00E5FF] mb-2">
+          Legal &amp; Usage Guidelines
+        </p>
+        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          Terms of Service
+        </h1>
+        <p class="mt-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+          Effective Date: November 2026 &middot; <span class="font-mono">mohit-tools.com</span>
+        </p>
+      </div>
+
+      <section class="space-y-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+          1. Acceptance of Terms
+        </h2>
+        <p>
+          By accessing and using the PS5 &ldquo;Can I Fit GTA 6?&rdquo; Storage Calculator on <strong>mohit-tools.com</strong>, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please discontinue use of this website.
+        </p>
+      </section>
+
+      <section class="space-y-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+          2. Informational &amp; Storage Estimate Disclaimer
+        </h2>
+        <p>
+          All console usable capacities, game install sizes, and Grand Theft Auto VI storage requirements (<span class="font-mono">212 GB</span> base estimate) displayed on this site are provided for informational and planning purposes only. Actual file sizes may vary depending on Day-1 patches, regional versions, DLC expansions, and PlayStation 5 system software updates.
+        </p>
+      </section>
+
+      <section class="space-y-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+          3. No Official Affiliation &amp; Trademarks
+        </h2>
+        <p>
+          This tool is an independent fan-built web utility created by <strong>mohit-tools.com</strong> and is not affiliated with, endorsed by, or sponsored by Sony Interactive Entertainment (PlayStation), Rockstar Games, or Take-Two Interactive. PlayStation, PS5, Grand Theft Auto, GTA 6, and all listed video game titles are trademarks of their respective owners.
+        </p>
+      </section>
+
+      <section class="space-y-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+          4. Limitation of Liability
+        </h2>
+        <p>
+          This service is provided &ldquo;as is&rdquo; without warranties of any kind. Before uninstalling games or deleting media on your console, always double-check your actual available space directly inside your PS5 <strong>Settings &gt; Storage</strong> menu. We are not liable for any data loss or inconvenience resulting from reliance on estimates generated by this calculator.
+        </p>
+      </section>
+
+      <section class="space-y-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+          5. Third-Party Advertisements &amp; Links
+        </h2>
+        <p>
+          We may use third-party advertising networks (such as Google AdSense) and analytics tools (such as Google Analytics) to support and improve our free web utilities. Our pages may also include links to external websites (such as Buy Me a Coffee). We do not control and are not responsible for the content, policies, or practices of any third-party websites.
+        </p>
+      </section>
+
+      <section class="space-y-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+          6. Updates &amp; Contact
+        </h2>
+        <p>
+          We reserve the right to update or modify these Terms of Service at any time without prior notice. If you have questions or feedback regarding these terms, please reach out via our <a href="Contact.html" class="font-semibold text-[#0070D1] dark:text-[#00E5FF] underline-offset-4 hover:underline">Contact page</a>.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200/90 dark:border-slate-800/90 bg-white/60 dark:bg-[#0B0E14]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+      <span>&copy; 2026 mohit-tools.com</span>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="hover:text-slate-900 dark:hover:text-white underline-offset-4 hover:underline transition-colors">Calculator</a>
+        <span aria-hidden="true">&middot;</span>
+        <a href="Contact.html" class="hover:text-slate-900 dark:hover:text-white underline-offset-4 hover:underline transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('themeToggleBtn').addEventListener('click', function () {
+      var isDark = document.documentElement.classList.toggle('dark');
+      try {
+        localStorage.setItem('ps5_gta6_theme', isDark ? 'dark' : 'light');
+      } catch (e) {}
+    });
+  </script>
+</body>
+</html>
