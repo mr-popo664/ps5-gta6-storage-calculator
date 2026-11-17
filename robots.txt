@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ps5.mohit-tools.com/sitemap.xml
